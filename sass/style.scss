@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// Colors 
+$White: hsl(0, 0%, 100%);
+$Grey: hsl(0, 0%, 20%);
+$DarkGrey: hsl(0, 0%, 12%);
+$OffBlack: hsl(0, 0%, 8%);
+$Green: hsl(75, 94%, 57%);
+$size: 14px;
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: $OffBlack;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    main {
+        background-color: $DarkGrey;
+        width: 370px;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        img {
+            width: 100px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        h1 {
+            color: $White;
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        p.address {
+            color: $Green;
+            font-size: $size;
+            font-weight: 700;
+        }
+        p.tweet {
+            color: #aaa;
+            margin: 20px 0 15px 0;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            a {
+                text-decoration: none;
+                color: $White;
+                background-color: $Grey;
+                padding: 13px 0;
+                margin: 8px 0;
+                font-weight: bold;
+                font-size: 14px;
+                border-radius: 10px;
+                transition: 0.3s;
+                &:hover {
+                    background-color: $Green;
+                    color: $OffBlack;
+                }
+            }
+        }
+    }
+}
